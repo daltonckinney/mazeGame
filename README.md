@@ -1,4 +1,4 @@
-# # Maze Game 
+# Maze Game 
 
 This game will have multiple game modes
 
