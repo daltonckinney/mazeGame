@@ -1,11 +1,17 @@
 #include <SFML/Graphics.hpp>
 
+/**
+ * Main function, program execution begins and ends here 
+ */
 int main() {
-    sf::RenderWindow window(sf::VideoMode(200,200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    int wsx = 500; /* Window size x-value */
+    int wsy = 500; /* Window size y-value */
 
-    while (window.isOpen())
+    sf::RenderWindow window(sf::VideoMode(wsx,wsy), "Maze Game by Dalton Kinney");
+    sf::RectangleShape wall(sf::Vector2f(20, wsy));
+    wall.setFillColor(sf::Color::Red);
+
+    while (window.isOpen()) /* Main loop for game */
     {
         sf::Event event;
         while (window.pollEvent(event))
@@ -15,7 +21,9 @@ int main() {
         }
 
         window.clear();
-        window.draw(shape);
+
+        window.draw(wall);
+        
         window.display();
     }
 
