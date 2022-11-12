@@ -11,6 +11,9 @@ Could possible have some lockers or something that the player will be able to hi
 Multiplayer: Will allow for the players to play on either a connection with a server, or on the same
 computer by using the wasd and arrow keys for each player.
 
+## Dependencies
+SFML: Instructions for installing can be found here: https://www.sfml-dev.org/tutorials/2.5/start-linux.php
+
 # Forseeable future plans
 Would like to use this project as a stepping stone to see if I can train an ai or use machine
 learning principles against the randomely generated maps as a way to learn the technology. This may bea separate project
