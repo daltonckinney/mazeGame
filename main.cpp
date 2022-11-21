@@ -8,7 +8,7 @@ int main() {
     int wsy = 500; /* Window size y-value */
 
     sf::RenderWindow window(sf::VideoMode(wsx,wsy), "Maze Game by Dalton Kinney");
-    sf::RectangleShape wall(sf::Vector2f(20, wsy));
+    sf::RectangleShape wall(sf::Vector2f(wsx, 20));
     wall.setFillColor(sf::Color::Red);
 
     while (window.isOpen()) /* Main loop for game */
